@@ -67,6 +67,7 @@ def record_trace(
         print("Recording... (Ctrl+C to stop)\n")
 
     # Run xctrace
+    result = None
     try:
         result = subprocess.run(cmd, capture_output=True, text=True)
     except KeyboardInterrupt:
